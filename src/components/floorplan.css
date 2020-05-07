@@ -1,0 +1,18 @@
+@keyframes onLoad {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.floorplan {
+  animation-name: onLoad;
+  animation-duration: 1.2s;
+  position: absolute;
+  top: 15%;
+  left: 31%;
+  height: 68%;
+}

@@ -1,0 +1,39 @@
+@keyframes moveDesk {
+  0% {
+    right: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  90% {
+    right: 20.5%;
+  }
+  100% {
+    right: 20%;
+  }
+}
+@keyframes moveDeskOut {
+  0% {
+    right: 20%;
+    opacity: 1;
+  }
+  100% {
+    right: 0%;
+    opacity: 0;
+  }
+}
+.desk {
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+}
+.onLoadClassDesk {
+  animation-name: moveDesk;
+  animation-duration: 1s;
+}
+.onClickClassDesk {
+  animation-name: moveDeskOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}

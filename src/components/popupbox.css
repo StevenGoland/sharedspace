@@ -1,0 +1,42 @@
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.popup_location {
+  position: fixed;
+  left: 30%;
+  top: 10%;
+}
+.modal_header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  width: 600px;
+}
+.modal_content {
+  padding: 2px 16px;
+  background-color: white;
+  width: 600px;
+}
+
+.test_img {
+  height: 400px;
+  width: 600px;
+}
+
+.close {
+  float: right;
+  color: #4d524e;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover {
+  color: black;
+  cursor: pointer;
+}

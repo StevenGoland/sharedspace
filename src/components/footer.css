@@ -1,0 +1,65 @@
+@keyframes shrink {
+  0% {
+    height: 20%;
+  }
+  100% {
+    height: 3%;
+  }
+}
+@keyframes removeContent {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #2e3192;
+  height: 20%;
+  width: 100%;
+}
+.small-footer {
+  animation-name: shrink;
+  animation-duration: 1.2s;
+  position: fixed;
+  bottom: 0;
+  background-color: #2e3192;
+  height: 3%;
+  width: 100%;
+}
+.footer-logo {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.footer-logo-hidden {
+  animation-name: removeContent;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.footer-content1 {
+  position: absolute;
+  font-family: "aktiv-grotesk-thin", sans-serif;
+  line-height: 22px;
+  font-size: 14px;
+  color: white;
+  top: 15%;
+  right: 35%;
+}
+.footer-content2 {
+  position: absolute;
+  font-family: "aktiv-grotesk-thin", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  top: 15%;
+  right: 20%;
+}

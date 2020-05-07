@@ -1,0 +1,62 @@
+@keyframes moveText {
+  0% {
+    opacity: 0;
+    left: 0%;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    left: 10%;
+  }
+}
+@keyframes moveTextOut {
+  0% {
+    left: 10%;
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+    opacity: 0;
+  }
+}
+.onLoadClassText {
+  animation-name: moveText;
+  animation-duration: 1s;
+}
+.onClickClassText {
+  animation-name: moveTextOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.title {
+  position: absolute;
+  top: 6%;
+  left: 9.5%;
+  height: 18%;
+}
+.description {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 35%;
+  font-weight: 18px;
+}
+.avail_button {
+  position: absolute;
+  font-family: "aktiv-grotesk-thin", sans-serif;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  left: 10%;
+  top: 50%;
+  padding: 15px 32px;
+  font-size: 16px;
+  background-color: #3639ad;
+  color: white;
+}
+.avail_button:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
